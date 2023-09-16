@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      backgroundColor: const Color.fromARGB(255, 232, 229, 229),
+      backgroundColor:  Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
         shadowColor: Color.fromARGB(255, 80, 27, 215),
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.only(top: 50, bottom: 20),
+                  margin: EdgeInsets.only(top: 10, bottom: 20),
                   alignment: Alignment.topCenter,
                   child: ClipRRect(
                     borderRadius: BorderRadiusDirectional.horizontal(),
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
                     child: Text(
                       'Yoga classes',
                       style: TextStyle(
-                          fontSize: 35,
+                          fontSize: 38,
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.bold),
                     ),
@@ -50,21 +50,52 @@ class MyApp extends StatelessWidget {
                   child: Column(
                     children: [
                   Container(
-                    margin: const EdgeInsets.only(top: 10, bottom: 150),
+                    margin: const EdgeInsets.only(top: 10, bottom: 50),
                     child: const Text(
                       ''' Meditation is the key to
-         Productivity, Happiness & Longitivity.''',
+     Productivity, Happiness & Longitivity.''',
                       textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 15,
+                      ),
                     ),
                   ),
               ]),
                 ),
               ]),
-        )
+        ),
+        Expanded(
+          child: Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 20),
+                child:  ElevatedButton(
+                  child: Text('Next'),
+                onPressed: () {
+                  Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => const Page2()),
+  );
+                }),
+              )
+            ],
+          ))
         ]),
           ),
         ],
       ),
+      resizeToAvoidBottomInset : false,
     ));
   }
 }
+
+class Page2 extends StatelessWidget {
+  const Page2({super.key});
+  
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+}
+
