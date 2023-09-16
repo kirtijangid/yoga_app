@@ -18,32 +18,51 @@ class MyApp extends StatelessWidget {
       body: Stack(
         children: [
           Container(
-              padding: EdgeInsets.symmetric(
-                horizontal: 20,
-                vertical: 15,
-              ),
-              child: Column(
-                children: [
-                  Container(
-                    margin: EdgeInsets.only(top: 50, bottom: 50),
-                    alignment: Alignment.topCenter,
-                    child: ClipRRect(
-                      borderRadius: BorderRadiusDirectional.horizontal(),
-                      child: Image.asset('assets/image1.jpg'),
-                    ),
+            padding: EdgeInsets.symmetric(
+              horizontal: 20,
+              vertical: 15,
+            ),
+            child: Column(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(top: 50, bottom: 20),
+                  alignment: Alignment.topCenter,
+                  child: ClipRRect(
+                    borderRadius: BorderRadiusDirectional.horizontal(),
+                    child: Image.asset('assets/image1.jpg'),
                   ),
-                  Expanded(
-                      child: Container(
+                ),
+                Expanded(
+                  child: Column(
+                    children: [
+                      Container(
                     margin: EdgeInsets.only(top: 20, bottom: 10),
                     child: Text(
                       'Yoga classes',
                       style: TextStyle(
-                        fontSize: 20,
-                           fontStyle: FontStyle.italic),
+                          fontSize: 35,
+                          fontStyle: FontStyle.italic,
+                          fontWeight: FontWeight.bold),
                     ),
-                  ))
-                ],
-              ))
+                  ),
+              
+                 Expanded(
+                  child: Column(
+                    children: [
+                  Container(
+                    margin: const EdgeInsets.only(top: 10, bottom: 150),
+                    child: const Text(
+                      ''' Meditation is the key to
+         Productivity, Happiness & Longitivity.''',
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+              ]),
+                ),
+              ]),
+        )
+        ]),
+          ),
         ],
       ),
     ));
