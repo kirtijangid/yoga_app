@@ -15,7 +15,7 @@ class _ImageSliderState extends State<ImageSlider> {
     {"id": 1, "image_path": 'assets/advanced2.png'}
   ];
   final CarouselController carouselController = CarouselController();
-  int currentIndex = 1;
+  int currentIndex = 0;
 
   @override
   Widget build(BuildContext context) {
