@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'pages/home.dart';
@@ -13,3 +12,4 @@ class MyApp extends StatelessWidget {
     return MaterialApp(home: Home());
   }
 }
+

@@ -22,11 +22,11 @@ class Page2 extends StatelessWidget {
             ),
             child: Column(children: [
               Container(
-                margin: EdgeInsets.only(top: 10, bottom: 20),
+                margin: EdgeInsets.only(top: 60, bottom: 20),
                 alignment: Alignment.topCenter,
                 child: ClipRRect(
                   borderRadius: BorderRadiusDirectional.horizontal(),
-                  child: Image.asset('assets/image1.jpg'),
+                  child: Image.asset('assets/image2.jpg'),
                 ),
               ),
               Expanded(
@@ -34,9 +34,9 @@ class Page2 extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(top: 20, bottom: 10),
                     child: Text(
-                      'Yoga classes',
+                      'Daily Yoga ',
                       style: TextStyle(
-                          fontSize: 38,
+                          fontSize: 40,
                           fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.bold),
                     ),
@@ -46,8 +46,8 @@ class Page2 extends StatelessWidget {
                       Container(
                         margin: const EdgeInsets.only(top: 10, bottom: 50),
                         child: const Text(
-                          ''' Meditation is the key to
-     Productivity, Happiness & Longitivity.''',
+                          ''' Do your practice of physical exercise and
+          relaxation make healthy.''',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 15,
@@ -64,7 +64,7 @@ class Page2 extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(top: 20),
                     child: ElevatedButton(
-                      child: Text('Next 2'),
+                      child: Text(' Next   > '),
                       onPressed: () {
                         Navigator.push(
                           context,
