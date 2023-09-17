@@ -64,7 +64,7 @@ class Page2 extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(top: 20),
                     child: ElevatedButton(
-                      child: Text(' Next   > '),
+                      child: Text(' Next   >> '),
                       onPressed: () {
                         Navigator.push(
                           context,
