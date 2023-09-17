@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:yogmantra/Dashboard/slider.dart';
+
 
 class Page3 extends StatelessWidget {
   const Page3({Key? key}) : super(key: key);
@@ -68,7 +70,7 @@ class Page3 extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Dashboard()),
+                              builder: (context) => const ImageSlider()),
                         );
                       },
                     ),
@@ -84,12 +86,4 @@ class Page3 extends StatelessWidget {
   }
 }
 
-class Dashboard extends StatelessWidget{
-  const Dashboard();
-  
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
-  }
-}
+
