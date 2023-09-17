@@ -73,10 +73,11 @@ class Home extends StatelessWidget {
                                 builder: (context) => const Page2()),
                           );
                         }),
-                  )
+                  ),
                 ],
-              ))
-            ]),
+              ),
+              ),
+            ],),
           ),
         ],
       ),
