@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'newpage.dart';
 
 class ImageSlider extends StatefulWidget {
   const ImageSlider({super.key});
@@ -122,52 +123,71 @@ class _ImageSliderState extends State<ImageSlider>
                 color: Colors.grey,
                 borderStyle: BorderStyle.none,
               ),
-              // SizedBox(
-              //   height: 300,
-              //   width: MediaQuery.of(context).size.width,
-              //   child: PageView.builder(
-              //     physics: BouncingScrollPhysics(),
-              //     controller:
-              //         PageController(initialPage: 3, viewportFraction: 0.7),
-              //     itemBuilder: (context, index) {
-              //       print(index % assets.length);
-              //       return Container(
-              //         margin: EdgeInsets.all(8),
-              //         clipBehavior: Clip.antiAlias,
-              //         decoration: BoxDecoration(
-              //             //color: Color[index]
-              //             borderRadius: BorderRadius.circular(25)),
-              //         child: Image.asset(
-              //           assets[index % assets.length],
-              //           fit: BoxFit.cover,
-              //         ),
-              //       );
-              //     },
-              //   ),
-              // )
+               SizedBox(
+                 height: 300,
+                 width: MediaQuery.of(context).size.width,
+                 child: PageView.builder(
+                   physics: BouncingScrollPhysics(),
+                   controller:
+                       PageController(initialPage: 3, viewportFraction: 0.7),
+                   itemBuilder: (context, index) {
+                   //print(index % assets.length);
+                     return Container(
+                       margin: EdgeInsets.all(8),
+                       clipBehavior: Clip.antiAlias,
+                       decoration: BoxDecoration(
+                           //color: Color[index]
+                           borderRadius: BorderRadius.circular(25)),
+                       child: Image.asset(
+                         assets[index % assets.length],
+                         fit: BoxFit.cover,
+                       ),
+                     );
+                   },
+                 ),
+               )
             ],
           ),
         ),
       ),
        bottomNavigationBar: BottomNavigationBar(
             currentIndex: 0,
-            fixedColor: Colors.black,
+            selectedItemColor: Colors.amber,
             items: const [
               BottomNavigationBarItem(
                 label: "Home",
-                icon: Icon(Icons.home),
+                //backgroundColor: Colors.blueGrey,
+                icon: Icon(Icons.home,
+                color: Colors.black),
               ),
               BottomNavigationBarItem(
                 label: "Search",
-                icon: Icon(Icons.search),
+                // backgroundColor: Colors.blueGrey,
+                icon: Icon(Icons.search,
+                color: Colors.black),
               ),
               BottomNavigationBarItem(
-                label: "Profile",
-                icon: Icon(Icons.account_circle),
+                label: "Activity",
+                // backgroundColor: Colors.blueGrey,
+                icon: Icon(Icons.bar_chart,
+                color: Colors.black),
+              ),
+               BottomNavigationBarItem(
+                label: "Settings",
+                // backgroundColor: Colors.blueGrey,
+                icon: Icon(Icons.settings,
+                color: Colors.black),
               ),
             ],
-            onTap: (int indexOfItem) {}
+            onTap: (int indexOfItem) {
+              Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Newpage()),
+                        );
+            }
             ),
     );
   }
 }
+
