@@ -123,6 +123,7 @@ class _ImageSliderState extends State<ImageSlider>
                 color: Colors.grey,
                 borderStyle: BorderStyle.none,
               ),
+              
                SizedBox(
                  height: 300,
                  width: MediaQuery.of(context).size.width,
