@@ -48,7 +48,7 @@ class _ImageSliderState extends State<ImageSlider>
                       child: Text('Challenges',
                       style: TextStyle(
                         fontSize: 20,
-                        fontStyle: FontStyle.italic,
+                        fontStyle: FontStyle.normal,
                         fontWeight: FontWeight.bold,
                       ),
                       ),
@@ -92,7 +92,8 @@ class _ImageSliderState extends State<ImageSlider>
                   itemCount: assets.length,
                   physics: BouncingScrollPhysics(),
                   controller:
-                      PageController(initialPage: 0, viewportFraction: 0.9),
+                      PageController(initialPage: 0,
+                       viewportFraction: 0.9),
                   onPageChanged: (value) {
                     currentIndex = value;
                     setState(() {});
@@ -148,6 +149,25 @@ class _ImageSliderState extends State<ImageSlider>
           ),
         ),
       ),
+       bottomNavigationBar: BottomNavigationBar(
+            currentIndex: 0,
+            fixedColor: Colors.black,
+            items: const [
+              BottomNavigationBarItem(
+                label: "Home",
+                icon: Icon(Icons.home),
+              ),
+              BottomNavigationBarItem(
+                label: "Search",
+                icon: Icon(Icons.search),
+              ),
+              BottomNavigationBarItem(
+                label: "Profile",
+                icon: Icon(Icons.account_circle),
+              ),
+            ],
+            onTap: (int indexOfItem) {}
+            ),
     );
   }
 }
