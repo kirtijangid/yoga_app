@@ -51,7 +51,7 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
               ),
             ),
             SizedBox(
-              height: 200,
+              height: 320,
               width: MediaQuery.of(context).size.width,
               child: PageView.builder(
                 itemCount: assets.length,
