@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Newpage extends StatelessWidget {
-  const Newpage({Key? key}) : super(key: key);
+class SeasonalYoga extends StatelessWidget {
+  const SeasonalYoga({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

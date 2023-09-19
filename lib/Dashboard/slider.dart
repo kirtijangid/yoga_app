@@ -16,15 +16,9 @@ class _ImageSliderState extends State<ImageSlider>
     'assets/intermediate.jpg',
     'assets/advanced2.png'
   ];
-  List<String> assets2 = [
-    'assets/sunsalutation3.jpg',
-   'assets/seated1.jpg'
-  ];
+  List<String> assets2 = ['assets/sunsalutation3.jpg', 'assets/seated1.jpg'];
 
-  List<String> assets3 = [
-    'assets/standing2.jpg',
-     'assets/floor1.jpg'
-  ];
+  List<String> assets3 = ['assets/standing2.jpg', 'assets/floor1.jpg'];
 
   final Color = [
     Colors.red,
@@ -130,21 +124,18 @@ class _ImageSliderState extends State<ImageSlider>
                 color: Colors.grey,
                 borderStyle: BorderStyle.none,
               ),
-              
+
               Container(
-                margin: EdgeInsets.only(top: 20, 
-                bottom: 10, left: 20),
-                child: Text('Yoga',
-                style: TextStyle(
-                  fontStyle: 
-                  FontStyle.normal,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  
-                ),
+                margin: EdgeInsets.only(top: 20, bottom: 10, left: 20),
+                child: Text(
+                  'Yoga',
+                  style: TextStyle(
+                    fontStyle: FontStyle.normal,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 alignment: Alignment.bottomLeft,
-
               ),
               SizedBox(
                 height: 200,
@@ -216,7 +207,7 @@ class _ImageSliderState extends State<ImageSlider>
               icon: Icon(Icons.home, color: Colors.black),
             ),
             BottomNavigationBarItem(
-              label: "Search",
+              label: "Seasonal Yoga",
               // backgroundColor: Colors.blueGrey,
               icon: Icon(Icons.search, color: Colors.black),
             ),
@@ -234,7 +225,7 @@ class _ImageSliderState extends State<ImageSlider>
           onTap: (int indexOfItem) {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const Newpage()),
+              MaterialPageRoute(builder: (context) => const SeasonalYoga()),
             );
           }),
     );
