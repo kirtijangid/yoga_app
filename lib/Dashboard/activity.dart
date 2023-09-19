@@ -79,7 +79,8 @@ class _ActivityState extends State<Activity> {
               context,
               MaterialPageRoute(builder: (context) => const Settings()),
             );
-          }),
+          },
+          ),
     );
   }
 }
@@ -93,3 +94,5 @@ class Settings extends StatelessWidget{
     throw UnimplementedError();
   }
 }
+
+
