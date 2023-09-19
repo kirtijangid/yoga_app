@@ -18,9 +18,12 @@ class _ImageSliderState extends State<ImageSlider>
   ];
   List<String> assets2 = [
     'assets/sunsalutation3.jpg',
-    'assets/seated1.jpg'
-    // 'assets/standing2.jpg',
-    // 'assets/floor1.jpg'
+   'assets/seated1.jpg'
+  ];
+
+  List<String> assets3 = [
+    'assets/standing2.jpg',
+     'assets/floor1.jpg'
   ];
 
   final Color = [
@@ -127,36 +130,63 @@ class _ImageSliderState extends State<ImageSlider>
                 color: Colors.grey,
                 borderStyle: BorderStyle.none,
               ),
-
-
-               SizedBox(
-              height: 200,
-              width: MediaQuery.of(context).size.width,
-              child: PageView.builder(
-                itemCount: assets2.length,
-                physics: BouncingScrollPhysics(),
-                //pageSnapping: false,
-                padEnds: false,
-                //reverse: true,
-                controller:
-                    PageController(initialPage: 1, viewportFraction: 0.5),
-                itemBuilder: (context, index) {
-                  //print(index % assets2.length);
-                  return Container(
-                    margin: const EdgeInsets.all(8),
-                    clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
-                        //  color: color[index],
-                        borderRadius: BorderRadius.circular(25)),
-                    child: Image.asset(
-                      assets2[index % assets2.length],
-                      fit: BoxFit.cover,
-                    ),
-                  );
-                },
-              ),
-            ),
               
+
+              SizedBox(
+                height: 200,
+                width: MediaQuery.of(context).size.width,
+                child: PageView.builder(
+                  itemCount: assets2.length,
+                  physics: BouncingScrollPhysics(),
+                  //pageSnapping: false,
+                  padEnds: false,
+                  //reverse: true,
+                  controller:
+                      PageController(initialPage: 1, viewportFraction: 0.5),
+                  itemBuilder: (context, index) {
+                    //print(index % assets2.length);
+                    return Container(
+                      margin: const EdgeInsets.all(8),
+                      clipBehavior: Clip.antiAlias,
+                      decoration: BoxDecoration(
+                          //  color: color[index],
+                          borderRadius: BorderRadius.circular(25)),
+                      child: Image.asset(
+                        assets2[index % assets2.length],
+                        fit: BoxFit.cover,
+                      ),
+                    );
+                  },
+                ),
+              ),
+
+              SizedBox(
+                height: 200,
+                width: MediaQuery.of(context).size.width,
+                child: PageView.builder(
+                  itemCount: assets3.length,
+                  physics: BouncingScrollPhysics(),
+                  //pageSnapping: false,
+                  padEnds: false,
+                  //reverse: true,
+                  controller:
+                      PageController(initialPage: 1, viewportFraction: 0.5),
+                  itemBuilder: (context, index) {
+                    //print(index % assets2.length);
+                    return Container(
+                      margin: const EdgeInsets.all(8),
+                      clipBehavior: Clip.antiAlias,
+                      decoration: BoxDecoration(
+                          //  color: color[index],
+                          borderRadius: BorderRadius.circular(25)),
+                      child: Image.asset(
+                        assets3[index % assets3.length],
+                        fit: BoxFit.cover,
+                      ),
+                    );
+                  },
+                ),
+              ),
             ],
           ),
         ),
@@ -164,7 +194,7 @@ class _ImageSliderState extends State<ImageSlider>
       resizeToAvoidBottomInset: false,
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: 0,
-          selectedItemColor: Colors.amber,
+          selectedItemColor: Colors.red,
           items: const [
             BottomNavigationBarItem(
               label: "Home",
