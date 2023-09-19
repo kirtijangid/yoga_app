@@ -100,6 +100,7 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                 width: MediaQuery.of(context).size.width,
                 child: PageView.builder(
                   physics: BouncingScrollPhysics(),
+                  padEnds: false,
                   controller:
                       PageController(initialPage: 2,
                        viewportFraction: 0.7),
