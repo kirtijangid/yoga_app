@@ -53,7 +53,7 @@ class _ImageSliderState extends State<ImageSlider>
                 child: Column(
                   children: [
                     Container(
-                      margin: EdgeInsets.only(left: 10),
+                      margin: EdgeInsets.only(left: 20),
                       child: Text(
                         'Challenges',
                         style: TextStyle(
@@ -131,7 +131,21 @@ class _ImageSliderState extends State<ImageSlider>
                 borderStyle: BorderStyle.none,
               ),
               
+              Container(
+                margin: EdgeInsets.only(top: 20, 
+                bottom: 10, left: 20),
+                child: Text('Yoga',
+                style: TextStyle(
+                  fontStyle: 
+                  FontStyle.normal,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  
+                ),
+                ),
+                alignment: Alignment.bottomLeft,
 
+              ),
               SizedBox(
                 height: 200,
                 width: MediaQuery.of(context).size.width,
