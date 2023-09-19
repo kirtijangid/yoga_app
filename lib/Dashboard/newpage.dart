@@ -13,7 +13,7 @@ class SeasonalYoga extends StatelessWidget {
         style: TextStyle(
           color: Colors.black),),
       ),
-      body: Center(child: Text('hii')),
+      body: 
     );
   }
 }
