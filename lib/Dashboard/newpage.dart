@@ -40,7 +40,7 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                     child: Text(
                       'Winter Yoga',
                       style: TextStyle(
-                        fontSize: 10,
+                        fontSize: 15,
                         fontStyle: FontStyle.normal,
                         fontWeight: FontWeight.bold,
                       ),
