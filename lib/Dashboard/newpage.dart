@@ -136,6 +136,42 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                 ),
                 alignment: Alignment.bottomLeft,
                 ),
+                
+                Align(
+            alignment: Alignment.bottomCenter,
+            child: Row(children: [
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.only(
+                    bottom: 20,
+                    right: 20,
+                    left: 20,
+                  ),
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: 5,
+                  ),
+                 
+                  child: Image.asset('name')
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(
+                  bottom: 20,
+                  right: 20,
+                ),
+                child: Text(
+                    '+',
+                    style: TextStyle(
+                      fontSize: 40,
+                    ),
+                  ),
+                  
+                ),
+              
+            ]),
+          ),
+
             ],
           ),
         ),
