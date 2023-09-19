@@ -16,6 +16,13 @@ class _ImageSliderState extends State<ImageSlider>
     'assets/intermediate.jpg',
     'assets/advanced2.png'
   ];
+  List<String> assets2 = [
+    'assets/sunsalutation3.jpg',
+    'assets/seated1.jpg'
+    // 'assets/standing2.jpg',
+    // 'assets/floor1.jpg'
+  ];
+
   final Color = [
     Colors.red,
     Colors.amber,
@@ -39,22 +46,20 @@ class _ImageSliderState extends State<ImageSlider>
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.only(
-                  top: 20,
-                bottom: 20),
+                margin: EdgeInsets.only(top: 20, bottom: 20),
                 child: Column(
                   children: [
                     Container(
                       margin: EdgeInsets.only(left: 10),
-                      child: Text('Challenges',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.bold,
+                      child: Text(
+                        'Challenges',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                      ),
-                    alignment:Alignment.bottomLeft,
-                    
+                      alignment: Alignment.bottomLeft,
                     ),
                   ],
                 ),
@@ -93,8 +98,7 @@ class _ImageSliderState extends State<ImageSlider>
                   itemCount: assets.length,
                   physics: BouncingScrollPhysics(),
                   controller:
-                      PageController(initialPage: 0,
-                       viewportFraction: 0.9),
+                      PageController(initialPage: 0, viewportFraction: 0.9),
                   onPageChanged: (value) {
                     currentIndex = value;
                     setState(() {});
@@ -123,72 +127,69 @@ class _ImageSliderState extends State<ImageSlider>
                 color: Colors.grey,
                 borderStyle: BorderStyle.none,
               ),
-              
+
+
                SizedBox(
-                 height: 300,
-                 width: MediaQuery.of(context).size.width,
-                 child: PageView.builder(
-                   physics: BouncingScrollPhysics(),
-                   controller:
-                       PageController(initialPage: 3, viewportFraction: 0.7),
-                   itemBuilder: (context, index) {
-                   //print(index % assets.length);
-                     return Container(
-                       margin: EdgeInsets.all(8),
-                       clipBehavior: Clip.antiAlias,
-                       decoration: BoxDecoration(
-                           //color: Color[index]
-                           borderRadius: BorderRadius.circular(25)),
-                       child: Image.asset(
-                         assets[index % assets.length],
-                         fit: BoxFit.cover,
-                       ),
-                     );
-                   },
-                 ),
-               )
+              height: 200,
+              width: MediaQuery.of(context).size.width,
+              child: PageView.builder(
+                itemCount: assets2.length,
+                physics: BouncingScrollPhysics(),
+                controller:
+                    PageController(initialPage: 1, viewportFraction: 0.5),
+                itemBuilder: (context, index) {
+                  //print(index % assets2.length);
+                  return Container(
+                    margin: const EdgeInsets.all(8),
+                    clipBehavior: Clip.antiAlias,
+                    decoration: BoxDecoration(
+                        //  color: color[index],
+                        borderRadius: BorderRadius.circular(25)),
+                    child: Image.asset(
+                      assets2[index % assets2.length],
+                      fit: BoxFit.cover,
+                    ),
+                  );
+                },
+              ),
+            ),
+              
             ],
           ),
         ),
       ),
-       bottomNavigationBar: BottomNavigationBar(
-            currentIndex: 0,
-            selectedItemColor: Colors.amber,
-            items: const [
-              BottomNavigationBarItem(
-                label: "Home",
-                //backgroundColor: Colors.blueGrey,
-                icon: Icon(Icons.home,
-                color: Colors.black),
-              ),
-              BottomNavigationBarItem(
-                label: "Search",
-                // backgroundColor: Colors.blueGrey,
-                icon: Icon(Icons.search,
-                color: Colors.black),
-              ),
-              BottomNavigationBarItem(
-                label: "Activity",
-                // backgroundColor: Colors.blueGrey,
-                icon: Icon(Icons.bar_chart,
-                color: Colors.black),
-              ),
-               BottomNavigationBarItem(
-                label: "Settings",
-                // backgroundColor: Colors.blueGrey,
-                icon: Icon(Icons.settings,
-                color: Colors.black),
-              ),
-            ],
-            onTap: (int indexOfItem) {
-              Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Newpage()),
-                        );
-            }
+      resizeToAvoidBottomInset: false,
+      bottomNavigationBar: BottomNavigationBar(
+          currentIndex: 0,
+          selectedItemColor: Colors.amber,
+          items: const [
+            BottomNavigationBarItem(
+              label: "Home",
+              //backgroundColor: Colors.blueGrey,
+              icon: Icon(Icons.home, color: Colors.black),
             ),
+            BottomNavigationBarItem(
+              label: "Search",
+              // backgroundColor: Colors.blueGrey,
+              icon: Icon(Icons.search, color: Colors.black),
+            ),
+            BottomNavigationBarItem(
+              label: "Activity",
+              // backgroundColor: Colors.blueGrey,
+              icon: Icon(Icons.bar_chart, color: Colors.black),
+            ),
+            BottomNavigationBarItem(
+              label: "Settings",
+              // backgroundColor: Colors.blueGrey,
+              icon: Icon(Icons.settings, color: Colors.black),
+            ),
+          ],
+          onTap: (int indexOfItem) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Newpage()),
+            );
+          }),
     );
   }
 }
-
