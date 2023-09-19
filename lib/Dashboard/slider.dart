@@ -135,6 +135,9 @@ class _ImageSliderState extends State<ImageSlider>
               child: PageView.builder(
                 itemCount: assets2.length,
                 physics: BouncingScrollPhysics(),
+                //pageSnapping: false,
+                padEnds: false,
+                //reverse: true,
                 controller:
                     PageController(initialPage: 1, viewportFraction: 0.5),
                 itemBuilder: (context, index) {
