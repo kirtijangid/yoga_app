@@ -224,6 +224,53 @@ balance and steadiness,
                 ]),
               ),
 
+               Align(
+                alignment: Alignment.bottomCenter,
+                child: Row(children: [
+                  Expanded(
+                    child: Container(
+                        margin: EdgeInsets.only(
+                          bottom: 20,
+                          right: 20,
+                          left: 20,
+                        ),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 5,
+                        ),
+                        child: Image.asset('assets/legs.jpg')),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(
+                      bottom: 20,
+                      right: 20,
+                    ),
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Text(
+                            'Legs Workout',
+                            style: TextStyle(
+                                fontSize: 15,
+                                 fontWeight: FontWeight.bold),
+                          ),
+                          alignment: Alignment.topLeft,
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(
+                            top: 10,
+                          ),
+                          child: Text('''Makes joints stronger.
+Strengthens the core.'''),
+                        )
+                      ],
+                    ),
+                  ),
+                ]),
+              ),
+
+              
+
             ],
           ),
         ),
