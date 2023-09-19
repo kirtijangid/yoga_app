@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yogmantra/Dashboard/activity.dart';
 
 class SeasonalYoga extends StatefulWidget {
   const SeasonalYoga({Key? key}) : super(key: key);
@@ -393,11 +394,13 @@ and joints.'''),
             ),
           ],
           onTap: (int indexOfItem) {
-            // Navigator.push(
-            //   //context,
-            //  // MaterialPageRoute(builder: (context) => const SeasonalYoga()),
-            // );
+             Navigator.push(
+               context,
+              MaterialPageRoute(builder: (context) => const Activity()),
+             );
           }),
     );
   }
 }
+
+
