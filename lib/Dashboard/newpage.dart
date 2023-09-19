@@ -123,7 +123,14 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                   },
                 ),
               ),
-              Container(child: Text('Body Fitness'),)
+              Container(
+                child: Text('Body Fitness',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+                ),
+                ),
             ],
           ),
         ),
