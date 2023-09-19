@@ -78,9 +78,20 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                 },
               ),
             ),
-          ]),
+            Container(margin: EdgeInsets.only(top: 20, bottom: 10, left: 20),
+                child: Text(
+                  'Yoga Styles',
+                  style: TextStyle(
+                    fontStyle: FontStyle.normal,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                
+              ),])
+          ),
         ),
-      ),
-    );
+      );
+    
   }
 }
