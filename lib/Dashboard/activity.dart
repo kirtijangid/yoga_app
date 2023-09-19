@@ -10,7 +10,15 @@ class Activity extends StatefulWidget {
 class _ActivityState extends State<Activity> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        title: const Text(
+          'Activity',
+          
+        ),
+      ),
+    );
   }
 }
