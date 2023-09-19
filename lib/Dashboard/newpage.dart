@@ -84,10 +84,9 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                   style: TextStyle(
                     fontStyle: FontStyle.normal,
                     fontSize: 20,
-                    fontWeight: FontWeight.bold,
                   ),
                 ),
-                
+                alignment: Alignment.bottomLeft,
               ),])
           ),
         ),
