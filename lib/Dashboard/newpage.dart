@@ -6,6 +6,10 @@ class SeasonalYoga extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Seasonal Yoga'),
+      ),
       body: Center(child: Text('hii')),
     );
   }
