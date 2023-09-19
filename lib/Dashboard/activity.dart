@@ -39,7 +39,9 @@ class _ActivityState extends State<Activity> {
                     ),
                     alignment: Alignment.bottomLeft,
                   ),
-                  
+                  Container(
+                    child: Image.asset('assets/kcal2.jpg'),
+                  )
                 ],
               ),
             ),
