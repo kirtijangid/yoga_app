@@ -16,7 +16,7 @@ class _ActivityState extends State<Activity> {
         backgroundColor: Colors.white,
         title: const Text(
           'Activity',
-          
+          style: TextStyle(color: Colors.black),
         ),
       ),
     );
