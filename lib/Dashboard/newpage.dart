@@ -125,13 +125,15 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
               ),
               Container(
                 margin: EdgeInsets.only(top: 15,
-                bottom: 10),
+                bottom: 10,
+                left: 20),
                 child: Text('Body Fitness',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
                 ),
+                alignment: Alignment.bottomLeft,
                 ),
             ],
           ),
