@@ -160,7 +160,8 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                           child: Text(
                             'Abs Workout',
                             style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.bold),
+                                fontSize: 15,
+                                 fontWeight: FontWeight.bold),
                           ),
                           alignment: Alignment.topLeft,
                         ),
@@ -169,7 +170,7 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                             top: 10,
                           ),
                           child: Text('''This leads to better 
-  balance and steadiness,
+balance and steadiness,
  also called stability.'''),
                         )
                       ],
@@ -177,10 +178,57 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                   ),
                 ]),
               ),
+
+             Align(
+                alignment: Alignment.bottomCenter,
+                child: Row(children: [
+                  Expanded(
+                    child: Container(
+                        margin: EdgeInsets.only(
+                          bottom: 20,
+                          right: 20,
+                          left: 20,
+                        ),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 5,
+                        ),
+                        child: Image.asset('assets/glutes.jpg')),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(
+                      bottom: 20,
+                      right: 20,
+                    ),
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Text(
+                            'Glutes/Butts Workout',
+                            style: TextStyle(
+                                fontSize: 15,
+                                 fontWeight: FontWeight.bold),
+                          ),
+                          alignment: Alignment.topLeft,
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(
+                            top: 10,
+                          ),
+                          child: Text('''Strong glutes improve 
+  balance.'''),
+                        )
+                      ],
+                    ),
+                  ),
+                ]),
+              ),
+
             ],
           ),
         ),
       ),
+
       resizeToAvoidBottomInset: false,
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: 1,
