@@ -95,7 +95,30 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                 ),
                 alignment: Alignment.bottomLeft,
               ),
-              
+              SizedBox(
+                height: 200,
+                width: MediaQuery.of(context).size.width,
+                child: PageView.builder(
+                  physics: BouncingScrollPhysics(),
+                  controller:
+                      PageController(initialPage: 2,
+                       viewportFraction: 0.7),
+                  itemBuilder: (context, index) {
+                    
+                    return Container(
+                      margin: const EdgeInsets.all(8),
+                      clipBehavior: Clip.antiAlias,
+                      decoration: BoxDecoration(
+                          //  color: color[index],
+                          borderRadius: BorderRadius.circular(25)),
+                      child: Image.asset(
+                        assets2[index % assets2.length],
+                        fit: BoxFit.cover,
+                      ),
+                    );
+                  },
+                ),
+              ),
             ],
           ),
         ),
