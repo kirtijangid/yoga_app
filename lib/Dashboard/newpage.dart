@@ -14,6 +14,12 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
     'assets/summerseason1.jpg'
   ];
 
+  List<String> assets2 = [
+    'assets/hathyoga1.jpg',
+    'assets/poweryoga1.jpg',
+    'assets/legyoga1.jpg'
+  ];
+
   int currentIndex = 0;
 
   @override
@@ -30,55 +36,56 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
       body: Container(
         margin: EdgeInsets.only(top: 10),
         child: SingleChildScrollView(
-          child: Column(children: [
-            Container(
-              margin: EdgeInsets.only(top: 20, bottom: 20),
-              child: Column(
-                children: [
-                  Container(
-                    margin: EdgeInsets.only(left: 20),
-                    child: Text(
-                      'Winter Yoga',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.bold,
+          child: Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 20, bottom: 20),
+                child: Column(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 20),
+                      child: Text(
+                        'Winter Yoga',
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
+                      alignment: Alignment.bottomLeft,
                     ),
-                    alignment: Alignment.bottomLeft,
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            SizedBox(
-              height: 320,
-              width: MediaQuery.of(context).size.width,
-              child: PageView.builder(
-                itemCount: assets.length,
-                physics: BouncingScrollPhysics(),
-                controller:
-                    PageController(initialPage: 0,
-                     viewportFraction: 0.9),
-                onPageChanged: (value) {
-                  currentIndex = value;
-                  setState(() {});
-                },
-                itemBuilder: (context, index) {
-                  return Container(
-                    margin: EdgeInsets.all(8),
-                    clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
-                        //color: Color[index],
-                        borderRadius: BorderRadius.circular(25)),
-                    child: Image.asset(
-                      assets[index],
-                      fit: BoxFit.cover,
-                    ),
-                  );
-                },
+              SizedBox(
+                height: 320,
+                width: MediaQuery.of(context).size.width,
+                child: PageView.builder(
+                  itemCount: assets.length,
+                  physics: BouncingScrollPhysics(),
+                  controller:
+                      PageController(initialPage: 0, viewportFraction: 0.9),
+                  onPageChanged: (value) {
+                    currentIndex = value;
+                    setState(() {});
+                  },
+                  itemBuilder: (context, index) {
+                    return Container(
+                      margin: EdgeInsets.all(8),
+                      clipBehavior: Clip.antiAlias,
+                      decoration: BoxDecoration(
+                          //color: Color[index],
+                          borderRadius: BorderRadius.circular(25)),
+                      child: Image.asset(
+                        assets[index],
+                        fit: BoxFit.cover,
+                      ),
+                    );
+                  },
+                ),
               ),
-            ),
-            Container(margin: EdgeInsets.only(top: 20, bottom: 10, left: 20),
+              Container(
+                margin: EdgeInsets.only(top: 20, bottom: 10, left: 20),
                 child: Text(
                   'Yoga Styles',
                   style: TextStyle(
@@ -87,11 +94,13 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                   ),
                 ),
                 alignment: Alignment.bottomLeft,
-              ),])
+              ),
+              
+            ],
           ),
         ),
-
-        resizeToAvoidBottomInset: false,
+      ),
+      resizeToAvoidBottomInset: false,
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: 1,
           selectedItemColor: Colors.red,
@@ -118,12 +127,11 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
             ),
           ],
           onTap: (int indexOfItem) {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const SeasonalYoga()),
-            );
+            // Navigator.push(
+            //   //context,
+            //  // MaterialPageRoute(builder: (context) => const SeasonalYoga()),
+            // );
           }),
-      );
-    
+    );
   }
 }
