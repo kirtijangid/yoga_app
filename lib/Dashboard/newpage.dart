@@ -63,6 +63,7 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                 child: PageView.builder(
                   itemCount: assets.length,
                   physics: BouncingScrollPhysics(),
+                  padEnds: false,
                   controller:
                       PageController(initialPage: 0, viewportFraction: 0.9),
                   onPageChanged: (value) {
