@@ -106,10 +106,8 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                   pageSnapping: false,
                   reverse: false,
                   controller:
-                      PageController(initialPage: 2,
-                       viewportFraction: 0.7),
+                      PageController(initialPage: 2, viewportFraction: 0.7),
                   itemBuilder: (context, index) {
-                    
                     return Container(
                       margin: const EdgeInsets.all(8),
                       clipBehavior: Clip.antiAlias,
@@ -125,53 +123,60 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 15,
-                bottom: 10,
-                left: 20),
-                child: Text('Body Fitness',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+                margin: EdgeInsets.only(top: 15, bottom: 10, left: 20),
+                child: Text(
+                  'Body Fitness',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 alignment: Alignment.bottomLeft,
-                ),
-                
-                Align(
-            alignment: Alignment.bottomCenter,
-            child: Row(children: [
-              Expanded(
-                child: Container(
-                  margin: EdgeInsets.only(
-                    bottom: 20,
-                    right: 20,
-                    left: 20,
-                  ),
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 5,
-                  ),
-                 
-                  child: Image.asset('name')
-                ),
               ),
-              Container(
-                margin: EdgeInsets.only(
-                  bottom: 20,
-                  right: 20,
-                ),
-                child: Text(
-                    '+',
-                    style: TextStyle(
-                      fontSize: 40,
+              Align(
+                alignment: Alignment.bottomCenter,
+                child: Row(children: [
+                  Expanded(
+                    child: Container(
+                        margin: EdgeInsets.only(
+                          bottom: 20,
+                          right: 20,
+                          left: 20,
+                        ),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 5,
+                        ),
+                        child: Image.asset('assets/abs.jpg')),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(
+                      bottom: 20,
+                      right: 20,
+                    ),
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Text(
+                            'Abs Workout',
+                            style: TextStyle(
+                                fontSize: 15, fontWeight: FontWeight.bold),
+                          ),
+                          alignment: Alignment.topLeft,
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(
+                            top: 10,
+                          ),
+                          child: Text('''This leads to better 
+  balance and steadiness,
+ also called stability.'''),
+                        )
+                      ],
                     ),
                   ),
-                  
-                ),
-              
-            ]),
-          ),
-
+                ]),
+              ),
             ],
           ),
         ),
