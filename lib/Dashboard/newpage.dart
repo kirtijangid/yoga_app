@@ -96,7 +96,7 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                 alignment: Alignment.bottomLeft,
               ),
               SizedBox(
-                height: 200,
+                height: 180,
                 width: MediaQuery.of(context).size.width,
                 child: PageView.builder(
                   physics: BouncingScrollPhysics(),
@@ -124,6 +124,8 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                 ),
               ),
               Container(
+                margin: EdgeInsets.only(top: 15,
+                bottom: 10),
                 child: Text('Body Fitness',
                 style: TextStyle(
                   fontSize: 20,
