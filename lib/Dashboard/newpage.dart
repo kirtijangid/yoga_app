@@ -314,6 +314,52 @@ Build Lean Muscle Mass.'''),
                 ]),
               ),
 
+             Align(
+                alignment: Alignment.bottomCenter,
+                child: Row(children: [
+                  Expanded(
+                    child: Container(
+                        margin: EdgeInsets.only(
+                          bottom: 20,
+                          right: 20,
+                          left: 20,
+                        ),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 5,
+                        ),
+                        child: Image.asset('assets/chest.jpg')),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(
+                      bottom: 20,
+                      right: 10,
+                    ),
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Text(
+                            'Chest Workout',
+                            style: TextStyle(
+                                fontSize: 15,
+                                 fontWeight: FontWeight.bold),
+                          ),
+                          alignment: Alignment.topLeft,
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(
+                            top: 10,
+                          ),
+                          child: Text('''Improve posture, benefit
+breathing and support 
+the surrounding muscles 
+and joints.'''),
+                        )
+                      ],
+                    ),
+                  ),
+                ]),
+              ),
 
             ],
           ),
