@@ -8,7 +8,10 @@ class SeasonalYoga extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Seasonal Yoga'),
+        backgroundColor: Colors.white,
+        title: const Text('Seasonal Yoga',
+        style: TextStyle(
+          color: Colors.black),),
       ),
       body: Center(child: Text('hii')),
     );
