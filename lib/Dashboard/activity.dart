@@ -105,6 +105,14 @@ final TextEditingController _heightController = TextEditingController();
                             labelText: 'Height (cm)',
                             suffixText: 'centimeters'
                           ),
+                        ),
+
+                        TextField(
+                          controller: _weightController,
+                          keyboardType: TextInputType.number,
+                          decoration: InputDecoration(
+                            labelText: 'Weight(Kg)',
+                            suffixText: 'kilograms'),
                         )
                       ],
                     )
