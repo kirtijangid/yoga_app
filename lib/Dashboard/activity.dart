@@ -10,8 +10,7 @@ class Activity extends StatefulWidget {
 }
 
 class _ActivityState extends State<Activity> {
-
-final TextEditingController _heightController = TextEditingController();
+  final TextEditingController _heightController = TextEditingController();
   final TextEditingController _weightController = TextEditingController();
 
   double? bmi;
@@ -88,7 +87,6 @@ final TextEditingController _heightController = TextEditingController();
                   Container(
                     child: Image.asset('assets/kcal2.jpg'),
                   ),
-
                   Container(
                     padding: EdgeInsets.all(20),
                     child: Column(
@@ -98,36 +96,40 @@ final TextEditingController _heightController = TextEditingController();
                           keyboardType: TextInputType.number,
                           textInputAction: TextInputAction.next,
                           decoration: InputDecoration(
-                            labelText: 'Height (cm)',
-                            suffixText: 'centimeters'
-                          ),
+                              labelText: 'Height (cm)',
+                              suffixText: 'centimeters'),
                         ),
 
                         // const SizedBox(
                         //   height: 20,
                         // ),
-                        
+
                         TextField(
                           controller: _weightController,
                           keyboardType: TextInputType.number,
                           decoration: InputDecoration(
-                            labelText: 'Weight(Kg)',
-                            suffixText: 'kilograms'
-                            ),
+                              labelText: 'Weight(Kg)',
+                               suffixText: 'kilograms'
+                               ),
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             ElevatedButton(
                               onPressed: calculateBMI,
-                               child: const Text('Calculate'),
-                               ),
+                              child: const Text('Calculate'),
+                            ),
                           ],
                         ),
+
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        Text(errorText),
                       ],
-                    )
-                    
-              ),],
+                    ),
+                  ),
+                ],
               ),
             ),
           ]),
@@ -170,8 +172,6 @@ final TextEditingController _heightController = TextEditingController();
   }
 }
 
-
-
 class Settings extends StatelessWidget {
   const Settings();
 
@@ -180,5 +180,3 @@ class Settings extends StatelessWidget {
     return Scaffold();
   }
 }
-
-
