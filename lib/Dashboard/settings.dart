@@ -142,10 +142,64 @@ class _SettingsState extends State<Settings> {
                        ),
                      ]),
                    ),
+
+                   Container(
+                    margin: EdgeInsets.only(top: 20, left: 5),
+                     alignment: Alignment.bottomLeft,
+                    child: const Text(
+                      'SUPPORT US',
+                      style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                   Container(
+                     margin: const EdgeInsets.only(top: 10,
+                     left: 5),
+                     child: ListView(
+                      
+                      shrinkWrap: true,
+                       children: const <Widget>[
+                       ListTile(
+                         title: Text('Share With Friends',
+                         style: TextStyle(
+                          fontWeight: FontWeight.bold
+                         ),
+                         ),
+                         leading: Icon(Icons.share),
+                       ),
+                       ListTile(
+                         title: Text('Feedback',
+                         style: TextStyle(
+                          fontWeight: FontWeight.bold
+                          ),
+                          ),
+                         leading: Icon(Icons.feedback),
+                       ),
+                       ListTile(
+                         title: Text('Rate Us',
+                         style: TextStyle(
+                          fontWeight: FontWeight.bold
+                          ),
+                          ),
+                         leading: Icon(Icons.star),
+                       ),
+                       ListTile(
+                         title: Text('Privacy Policy',
+                         style: TextStyle(
+                          fontWeight: FontWeight.bold
+                          ),
+                          ),
+                         leading: Icon(Icons.privacy_tip),
+                       ),
+                     ]),
+                   ),
                  ],
                ),
              ),
-          ]),
+          ],
+          ),
         ),
       
         ),
