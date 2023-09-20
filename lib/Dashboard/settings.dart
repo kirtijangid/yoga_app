@@ -19,7 +19,7 @@ class _SettingsState extends State<Settings> {
           style: TextStyle(color: Colors.black),
         ),
       ),
-     
+      body: Container(),
 
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 3,
