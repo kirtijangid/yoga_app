@@ -158,7 +158,7 @@ class _SettingsState extends State<Settings> {
                      margin: const EdgeInsets.only(top: 10,
                      left: 5),
                      child: ListView(
-                      
+                      physics: BouncingScrollPhysics(),
                       shrinkWrap: true,
                        children: const <Widget>[
                        ListTile(
