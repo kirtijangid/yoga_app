@@ -42,18 +42,16 @@ class _SettingsState extends State<Settings> {
                       children: [
                         Container(
                           margin: const EdgeInsets.all(10),
-                          child: const Text(
-                            'Training Rest',
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ),
+                          child: const Text('Training Rest',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
                         Container(
                           alignment: Alignment.bottomRight,
                           margin: const EdgeInsets.only(left: 200),
-                          child: const Text('10 sec',
-                          style: TextStyle(
-                            color: Colors.blue
-                          ),),
+                          child: const Text(
+                            '10 sec',
+                            style: TextStyle(color: Colors.blue),
+                          ),
                         ),
                       ],
                     ),
@@ -71,10 +69,10 @@ class _SettingsState extends State<Settings> {
                         Container(
                           alignment: Alignment.bottomRight,
                           margin: const EdgeInsets.only(left: 210),
-                          child: const Text('200 Kcal',
-                          style: TextStyle(
-                            color: Colors.blue
-                          ),),
+                          child: const Text(
+                            '200 Kcal',
+                            style: TextStyle(color: Colors.blue),
+                          ),
                         )
                       ],
                     ),
@@ -93,12 +91,51 @@ class _SettingsState extends State<Settings> {
                       ],
                     ),
                   ),
-                ],
-              ),
-            ),
+                  Container(
+                    margin: EdgeInsets.only(top: 20, left: 5),
+                     alignment: Alignment.bottomLeft,
+                    child: const Text(
+                      'GENERAL',
+                      style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+            //       Container(
+            //         child: Column(
+            //           children: [
+            //             Container(
+            //         margin: EdgeInsets.only(top: 20),
+            //         child: ListView(
+            //           children: const <Widget>[
+            //           ListTile(
+            //             title: Text('Set Workout Remainder'),
+            //             leading: Icon(Icons.alarm),
+            //           ),
+            //           ListTile(
+            //             title: Text('Health Info'),
+            //             leading: Icon(Icons.local_hospital),
+            //           ),
+            //           ListTile(
+            //             title: Text('Change Unit System'),
+            //             leading: Icon(Icons.ac_unit),
+            //           ),
+            //           ListTile(
+            //             title: Text('Keep Screen On'),
+            //             leading: Icon(Icons.screen_lock_portrait),
+            //           ),
+            //         ]),
+            //       ),
+            //     ],
+            //   ),
+            // ),
           ]),
         ),
-      ),
+      ],
+        ),
+        ),
+        ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 3,
         selectedItemColor: Colors.red,
