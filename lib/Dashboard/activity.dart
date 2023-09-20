@@ -212,7 +212,96 @@ class _ActivityState extends State<Activity> {
                                 style: TextStyle(
                                   color: Colors.black54,
                                   fontSize: 16
-                                ),)
+                                ),
+                                ),
+                                Row(
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+                                        height: 25,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.horizontal(
+                                            left: Radius.circular(15)
+                                          ),
+                                          color: Colors.blue
+                                        ),
+                                        child: const Center(
+                                          child: Text('Underweight',
+                                           style: TextStyle(
+                                            fontSize: 8,
+                                            color: Colors.white
+                                           )),
+                                        ),
+                                      ),
+                                    ),
+                                    
+                                    Expanded(child: Container(
+                                      height: 25,
+                                      color: Colors.green,
+                                      child: const Center(
+                                        child: Text('Normal \nweight',
+                                        style: TextStyle(
+                                          fontSize: 8,
+                                          color: Colors.white
+                                        ),),
+                                      ),
+                                    ),
+                                    ),
+
+                                    Expanded(child: Container(
+                                      height: 25,
+                                      color: Colors.yellow.shade700,
+                                      child: const Center(
+                                        child: Text('Pre-Obesity',
+                                        style: TextStyle(
+                                          fontSize: 8,
+                                          color: Colors.white
+                                        ),),
+                                      ),
+                                    ),
+                                    ),
+
+                                    Expanded(child: Container(
+                                      height: 25,
+                                      color: Colors.orange,
+                                      child: const Center(
+                                        child: Text('Obesity \nclass 1',
+                                        style: TextStyle(
+                                          fontSize: 8,
+                                          color: Colors.white
+                                        ),),
+                                      ),
+                                    ),
+                                    ),
+
+                                    Expanded(child: Container(
+                                      height: 25,
+                                      color: Colors.deepOrangeAccent,
+                                      child: const Center(
+                                        child: Text('Obesity \nclass 2',
+                                        style: TextStyle(
+                                          fontSize: 8,
+                                          color: Colors.white
+                                        ),),
+                                      ),
+                                    ),
+                                    ),
+
+                                    Expanded(child: Container(
+                                      height: 25,
+                                      color: Colors.red,
+                                      child: const Center(
+                                        child: Text('Obesity \nclass 3',
+                                        style: TextStyle(
+                                          fontSize: 8,
+                                          color: Colors.white
+                                        ),),
+                                      ),
+                                    ),
+                                    ),
+
+                                  ],
+                                )
                               ],
                             ),),
                         ),
