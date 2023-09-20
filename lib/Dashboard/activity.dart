@@ -102,18 +102,28 @@ final TextEditingController _heightController = TextEditingController();
                             suffixText: 'centimeters'
                           ),
                         ),
-                        
-                        const SizedBox(
-                          height: 20,
-                        ),
 
+                        // const SizedBox(
+                        //   height: 20,
+                        // ),
+                        
                         TextField(
                           controller: _weightController,
                           keyboardType: TextInputType.number,
                           decoration: InputDecoration(
                             labelText: 'Weight(Kg)',
-                            suffixText: 'kilograms'),
-                        )
+                            suffixText: 'kilograms'
+                            ),
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            ElevatedButton(
+                              onPressed: calculateBMI,
+                               child: const Text('Calculate'),
+                               ),
+                          ],
+                        ),
                       ],
                     )
                     
