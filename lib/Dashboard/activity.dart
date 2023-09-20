@@ -125,7 +125,73 @@ class _ActivityState extends State<Activity> {
                         const SizedBox(
                           height: 30,
                         ),
+
                         Text(errorText),
+
+                        const SizedBox(
+                          height: 20,
+                        ),
+
+                        Container(
+                          width: MediaQuery.of(context).size.width,
+                          height: 300,
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
+                          border: Border.all(),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(10),
+                            child: Column(
+                              children: [
+                                const SizedBox(
+                                  height: 50,
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(bmi==null? '00.00' : bmi!.toStringAsFixed(2),
+                                    style: TextStyle(
+                                      fontSize: 60,
+                                      color:
+                                status == 'Underweight' ? Colors.blue
+                                    : status == 'Normal weight' ? Colors.green
+                                    : status == 'Pre-Obesity' ? Colors.yellow.shade700
+                                    : status == 'Obesity class 1' ? Colors.orange
+                                    : status == 'Obesity class 2' ? Colors.deepOrangeAccent
+                                    : status == 'Obesity class 3' ? Colors.red
+                                    : null
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    width: 10,
+                                  ),
+
+                                  Column(crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(status,
+                                    style: TextStyle(
+                                      color:
+                                      status == 'Underweight' ? Colors.blue
+                                    : status == 'Normal weight' ? Colors.green
+                                    : status == 'Pre-Obesity' ? Colors.yellow.shade700
+                                    : status == 'Obesity class 1' ? Colors.orange
+                                    : status == 'Obesity class 2' ? Colors.deepOrangeAccent
+                                    : status == 'Obesity class 3' ? Colors.red
+                                    : null
+                                    ),
+                                    ),
+                                    const Text('BMI',
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Colors.black45
+                                    ),
+                                    )
+                                  ],),
+                                  ],
+                                )
+                              ],
+                            ),),
+                        ),
+                        
                       ],
                     ),
                   ),
