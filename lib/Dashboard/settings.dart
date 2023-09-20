@@ -25,7 +25,7 @@ class _SettingsState extends State<Settings> {
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.only(bottom: 20),
+                margin: const EdgeInsets.only(bottom: 20),
                 child: Column(
                   children: [
                     Container(
@@ -47,15 +47,39 @@ class _SettingsState extends State<Settings> {
                               'Training Rest',
                               style: TextStyle(fontWeight: FontWeight.bold),
                             ),
-                          )
+                          ),
+                          Container(
+                            alignment: Alignment.bottomRight,
+                            margin: const EdgeInsets.only(left: 200),
+                            child: const Text('10 sec'),
+                          ),
                         ],
                       ),
-                    )
+                    ),
+                    Container(
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      margin: const EdgeInsets.all(10),
+                                      child: const Text(
+                                        'Daily Goal',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ),
+                                    Container(
+                                      alignment: Alignment.bottomRight,
+                                      margin: const EdgeInsets.only(left: 210),
+                                      child: const Text('200 Kcal'),
+                                    )
                   ],
                 ),
               ),
             ],
           ),
+        ),
+      ],
+      ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
