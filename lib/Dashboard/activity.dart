@@ -128,9 +128,9 @@ class _ActivityState extends State<Activity> {
 
                         Text(errorText),
 
-                        const SizedBox(
-                          height: 20,
-                        ),
+                        // const SizedBox(
+                        //   height: 20,
+                        // ),
 
                         Container(
                           width: MediaQuery.of(context).size.width,
