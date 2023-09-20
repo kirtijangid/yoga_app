@@ -19,7 +19,14 @@ class _SettingsState extends State<Settings> {
           style: TextStyle(color: Colors.black),
         ),
       ),
-      body: Container(),
+      body: Container(
+        child: Text('Workout',
+        style: TextStyle(
+          color: Colors.blue,
+          fontSize: 15,
+          fontWeight: FontWeight.bold
+        ),),
+      ),
 
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 3,
