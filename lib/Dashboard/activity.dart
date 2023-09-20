@@ -289,21 +289,42 @@ class _ActivityState extends State<Activity> {
 
                                     Expanded(child: Container(
                                       height: 25,
+                                      decoration: const BoxDecoration(
+                                        borderRadius: BorderRadius.horizontal(
+                                        right: Radius.circular(15),
+                                        
+                                        ),
                                       color: Colors.red,
+                                      ),
                                       child: const Center(
                                         child: Text('Obesity \nclass 3',
                                         style: TextStyle(
                                           fontSize: 8,
                                           color: Colors.white
-                                        ),),
+                                        ),
+                                        ),
                                       ),
                                     ),
                                     ),
 
                                   ],
+                                ),
+                                const Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text('00', style: TextStyle(color: Colors.transparent),),
+                                    Text('18.5'),
+                                    Text('25.0'),
+                                    Text('30.0'),
+                                    Text('35.0'),
+                                    Text('40.0'),
+                                    Text('00', style: TextStyle(color: Colors.transparent)
+                                    ),
+                                  ],
                                 )
                               ],
-                            ),),
+                            ),
+                            ),
                         ),
                         
                       ],
