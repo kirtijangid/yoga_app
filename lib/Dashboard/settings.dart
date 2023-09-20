@@ -22,64 +22,75 @@ class _SettingsState extends State<Settings> {
       body: Container(
         margin: EdgeInsets.only(top: 20, left: 10),
         child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                margin: const EdgeInsets.only(bottom: 20),
-                child: Column(
-                  children: [
-                    Container(
-                      alignment: Alignment.bottomLeft,
-                      child: const Text(
-                        'WORKOUT',
-                        style: TextStyle(
-                            color: Colors.blue,
-                            fontSize: 15,
-                            fontWeight: FontWeight.bold),
-                      ),
+          child: Column(children: [
+            Container(
+              margin: const EdgeInsets.only(bottom: 20),
+              child: Column(
+                children: [
+                  Container(
+                    alignment: Alignment.bottomLeft,
+                    child: const Text(
+                      'WORKOUT',
+                      style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold),
                     ),
-                    Container(
-                      child: Row(
-                        children: [
-                          Container(
-                            margin: const EdgeInsets.all(10),
-                            child: const Text(
-                              'Training Rest',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
+                  ),
+                  Container(
+                    child: Row(
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.all(10),
+                          child: const Text(
+                            'Training Rest',
+                            style: TextStyle(fontWeight: FontWeight.bold),
                           ),
-                          Container(
-                            alignment: Alignment.bottomRight,
-                            margin: const EdgeInsets.only(left: 200),
-                            child: const Text('10 sec'),
-                          ),
-                        ],
-                      ),
+                        ),
+                        Container(
+                          alignment: Alignment.bottomRight,
+                          margin: const EdgeInsets.only(left: 200),
+                          child: const Text('10 sec'),
+                        ),
+                      ],
                     ),
-                    Container(
-                                child: Row(
-                                  children: [
-                                    Container(
-                                      margin: const EdgeInsets.all(10),
-                                      child: const Text(
-                                        'Daily Goal',
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ),
-                                    Container(
-                                      alignment: Alignment.bottomRight,
-                                      margin: const EdgeInsets.only(left: 210),
-                                      child: const Text('200 Kcal'),
-                                    )
-                  ],
-                ),
+                  ),
+                  Container(
+                    child: Row(
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.all(10),
+                          child: const Text(
+                            'Daily Goal',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        Container(
+                          alignment: Alignment.bottomRight,
+                          margin: const EdgeInsets.only(left: 210),
+                          child: const Text('200 Kcal'),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    child: Column(
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.all(10),
+                          child: const Text(
+                            'Sound Options',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          alignment: Alignment.bottomLeft,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-            ],
-          ),
-        ),
-      ],
-      ),
+            ),
+          ]),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
