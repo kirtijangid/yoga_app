@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:yogmantra/Dashboard/settings.dart';
 
 class Activity extends StatefulWidget {
   const Activity();
@@ -378,11 +379,5 @@ class _ActivityState extends State<Activity> {
   }
 }
 
-class Settings extends StatelessWidget {
-  const Settings();
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
-  }
-}
+
