@@ -204,6 +204,15 @@ class _ActivityState extends State<Activity> {
                                     ],
                                     ),
                                 ),
+
+                                const SizedBox(
+                                  height: 30,
+                                ),
+                                const Text('Nutritional Status',
+                                style: TextStyle(
+                                  color: Colors.black54,
+                                  fontSize: 16
+                                ),)
                               ],
                             ),),
                         ),
