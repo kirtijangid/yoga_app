@@ -20,7 +20,8 @@ class _SettingsState extends State<Settings> {
         ),
       ),
       body: Container(
-        child: Text('Workout',
+        margin: EdgeInsets.only(top: 20, left: 10),
+        child: Text('WORKOUT',
         style: TextStyle(
           color: Colors.blue,
           fontSize: 15,
