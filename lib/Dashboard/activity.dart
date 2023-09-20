@@ -332,8 +332,9 @@ class _ActivityState extends State<Activity> {
                   ),
 
                   Container(
-                    
-                  )
+                    margin: const EdgeInsets.only(left: 25),
+                    child: Image.asset('assets/calendar.png'),
+                  ),
                 ],
               ),
             ),
