@@ -102,40 +102,38 @@ class _SettingsState extends State<Settings> {
                           fontWeight: FontWeight.bold),
                     ),
                   ),
-            //       Container(
-            //         child: Column(
-            //           children: [
-            //             Container(
-            //         margin: EdgeInsets.only(top: 20),
-            //         child: ListView(
-            //           children: const <Widget>[
-            //           ListTile(
-            //             title: Text('Set Workout Remainder'),
-            //             leading: Icon(Icons.alarm),
-            //           ),
-            //           ListTile(
-            //             title: Text('Health Info'),
-            //             leading: Icon(Icons.local_hospital),
-            //           ),
-            //           ListTile(
-            //             title: Text('Change Unit System'),
-            //             leading: Icon(Icons.ac_unit),
-            //           ),
-            //           ListTile(
-            //             title: Text('Keep Screen On'),
-            //             leading: Icon(Icons.screen_lock_portrait),
-            //           ),
-            //         ]),
-            //       ),
-            //     ],
-            //   ),
-            // ),
+                   Container(
+                     
+                     child: ListView(
+                      shrinkWrap: true,
+                       children: const <Widget>[
+                       ListTile(
+                         title: Text('Set Workout Remainder'),
+                         leading: Icon(Icons.alarm),
+                       ),
+                       ListTile(
+                         title: Text('Health Info'),
+                         leading: Icon(Icons.local_hospital),
+                       ),
+                       ListTile(
+                         title: Text('Change Unit System'),
+                         leading: Icon(Icons.ac_unit),
+                       ),
+                       ListTile(
+                         title: Text('Keep Screen On'),
+                         leading: Icon(Icons.screen_lock_portrait),
+                       ),
+                     ]),
+                   ),
+                 ],
+               ),
+             ),
           ]),
         ),
-      ],
+      
         ),
-        ),
-        ),
+        
+        
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 3,
         selectedItemColor: Colors.red,
