@@ -90,10 +90,6 @@ final TextEditingController _heightController = TextEditingController();
                   ),
 
                   Container(
-                    child: Image.asset('assets/BMI.png'),
-                  ),
-
-                  Container(
                     padding: EdgeInsets.all(20),
                     child: Column(
                       children: [
@@ -105,6 +101,10 @@ final TextEditingController _heightController = TextEditingController();
                             labelText: 'Height (cm)',
                             suffixText: 'centimeters'
                           ),
+                        ),
+                        
+                        const SizedBox(
+                          height: 20,
                         ),
 
                         TextField(
