@@ -50,7 +50,10 @@ class _SettingsState extends State<Settings> {
                         Container(
                           alignment: Alignment.bottomRight,
                           margin: const EdgeInsets.only(left: 200),
-                          child: const Text('10 sec'),
+                          child: const Text('10 sec',
+                          style: TextStyle(
+                            color: Colors.blue
+                          ),),
                         ),
                       ],
                     ),
@@ -68,7 +71,10 @@ class _SettingsState extends State<Settings> {
                         Container(
                           alignment: Alignment.bottomRight,
                           margin: const EdgeInsets.only(left: 210),
-                          child: const Text('200 Kcal'),
+                          child: const Text('200 Kcal',
+                          style: TextStyle(
+                            color: Colors.blue
+                          ),),
                         )
                       ],
                     ),
@@ -78,11 +84,11 @@ class _SettingsState extends State<Settings> {
                       children: [
                         Container(
                           margin: const EdgeInsets.all(10),
+                          alignment: Alignment.bottomLeft,
                           child: const Text(
                             'Sound Options',
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
-                          alignment: Alignment.bottomLeft,
                         ),
                       ],
                     ),
