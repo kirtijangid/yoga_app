@@ -107,7 +107,7 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                   pageSnapping: false,
                   reverse: false,
                   controller:
-                      PageController(initialPage: 2, viewportFraction: 0.7),
+                      PageController(initialPage: 0, viewportFraction: 0.7),
                   itemBuilder: (context, index) {
                     return Container(
                       margin: const EdgeInsets.all(8),
