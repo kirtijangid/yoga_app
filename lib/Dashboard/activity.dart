@@ -99,6 +99,8 @@ final TextEditingController _heightController = TextEditingController();
                       children: [
                         TextField(
                           controller: _heightController,
+                          keyboardType: TextInputType.number,
+                          textInputAction: TextInputAction.next,
                           decoration: InputDecoration(
                             labelText: 'Height (cm)',
                             suffixText: 'centimeters'
