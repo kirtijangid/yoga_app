@@ -75,7 +75,8 @@ class _ActivityState extends State<Activity> {
                 children: [
                   Container(
                     margin: EdgeInsets.only(left: 20),
-                    child: Text(
+                    alignment: Alignment.bottomLeft,
+                    child: const Text(
                       'Starts | today',
                       style: TextStyle(
                         fontSize: 18,
@@ -83,7 +84,6 @@ class _ActivityState extends State<Activity> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    alignment: Alignment.bottomLeft,
                   ),
                   Container(
                     child: Image.asset('assets/kcal2.jpg'),

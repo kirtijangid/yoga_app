@@ -21,14 +21,43 @@ class _SettingsState extends State<Settings> {
       ),
       body: Container(
         margin: EdgeInsets.only(top: 20, left: 10),
-        child: Text('WORKOUT',
-        style: TextStyle(
-          color: Colors.blue,
-          fontSize: 15,
-          fontWeight: FontWeight.bold
-        ),),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(bottom: 20),
+                child: Column(
+                  children: [
+                    Container(
+                      alignment: Alignment.bottomLeft,
+                      child: const Text(
+                        'WORKOUT',
+                        style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            margin: const EdgeInsets.all(10),
+                            child: const Text(
+                              'Training Rest',
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 3,
         selectedItemColor: Colors.red,
@@ -54,9 +83,7 @@ class _SettingsState extends State<Settings> {
             icon: Icon(Icons.settings, color: Colors.black),
           ),
         ],
-        onTap: (int indexOfItem) {
-          
-        },
+        onTap: (int indexOfItem) {},
       ),
     );
   }
