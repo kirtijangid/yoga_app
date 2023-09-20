@@ -103,24 +103,41 @@ class _SettingsState extends State<Settings> {
                     ),
                   ),
                    Container(
-                     
+                     margin: const EdgeInsets.only(top: 10,
+                     left: 5),
                      child: ListView(
                       shrinkWrap: true,
                        children: const <Widget>[
                        ListTile(
-                         title: Text('Set Workout Remainder'),
+                         title: Text('Set Workout Remainder',
+                         style: TextStyle(
+                          fontWeight: FontWeight.bold
+                         ),
+                         ),
                          leading: Icon(Icons.alarm),
                        ),
                        ListTile(
-                         title: Text('Health Info'),
+                         title: Text('Health Info',
+                         style: TextStyle(
+                          fontWeight: FontWeight.bold
+                          ),
+                          ),
                          leading: Icon(Icons.local_hospital),
                        ),
                        ListTile(
-                         title: Text('Change Unit System'),
+                         title: Text('Change Unit System',
+                         style: TextStyle(
+                          fontWeight: FontWeight.bold
+                          ),
+                          ),
                          leading: Icon(Icons.ac_unit),
                        ),
                        ListTile(
-                         title: Text('Keep Screen On'),
+                         title: Text('Keep Screen On',
+                         style: TextStyle(
+                          fontWeight: FontWeight.bold
+                          ),
+                          ),
                          leading: Icon(Icons.screen_lock_portrait),
                        ),
                      ]),
