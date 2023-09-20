@@ -185,9 +185,25 @@ class _ActivityState extends State<Activity> {
                                       color: Colors.black45
                                     ),
                                     )
-                                  ],),
                                   ],
-                                )
+                                  ),
+                                  ],
+                                ),
+                                Container(
+                                  height: 5,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black45,
+                                    borderRadius: BorderRadius.circular(50),
+                                    boxShadow: const [
+                                      BoxShadow(
+                                        color: Colors.grey,
+                                        blurRadius: 15,  //soften the shadow
+                                        spreadRadius: 1,  //extend the shadow
+                                        offset: Offset(5, 5),
+                                      ),
+                                    ],
+                                    ),
+                                ),
                               ],
                             ),),
                         ),
