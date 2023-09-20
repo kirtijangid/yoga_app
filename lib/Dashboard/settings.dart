@@ -230,7 +230,12 @@ class _SettingsState extends State<Settings> {
             icon: Icon(Icons.settings, color: Colors.black),
           ),
         ],
-        onTap: (int indexOfItem) {},
+        onTap: (int indexOfItem) {
+           Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Settings()),
+            );
+        },
       ),
     );
   }

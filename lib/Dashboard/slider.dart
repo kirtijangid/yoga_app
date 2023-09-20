@@ -227,7 +227,8 @@ class _ImageSliderState extends State<ImageSlider>
               context,
               MaterialPageRoute(builder: (context) => const SeasonalYoga()),
             );
-          }),
+          },
+          ),
     );
   }
 }
