@@ -92,9 +92,20 @@ final TextEditingController _heightController = TextEditingController();
                   Container(
                     child: Image.asset('assets/BMI.png'),
                   ),
+
                   Container(
-                    child:
-                    Text('data')
+                    child: Column(
+                      children: [
+                        TextField(
+                          controller: _heightController,
+                          decoration: InputDecoration(
+                            labelText: 'Height (cm)',
+                            suffixText: 'centimeters'
+                          ),
+                        )
+                      ],
+                    )
+                    
               ),],
               ),
             ),
