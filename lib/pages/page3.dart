@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:yogmantra/Dashboard/slider.dart';
+import 'package:yogmantra/homepage/home.dart';
+
 
 
 class Page3 extends StatelessWidget {
@@ -70,7 +71,7 @@ class Page3 extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const ImageSlider()),
+                              builder: (context) => const Homepage()),
                         );
                       },
                     ),

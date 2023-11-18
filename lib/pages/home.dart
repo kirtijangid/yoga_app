@@ -64,7 +64,7 @@ class Home extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(top: 20),
                     child: ElevatedButton(
-                        child: Text(' Next   >>' ),
+                        child: Text(' Next   >>'),
                         onPressed: () {
                           print("Called - 1");
                           Navigator.push(

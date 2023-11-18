@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:yogmantra/Dashboard/activity.dart';
+import 'package:yogmantra/bottomnavigation.dart';
 
-class SeasonalYoga extends StatefulWidget {
-  const SeasonalYoga({Key? key}) : super(key: key);
+
+class SearchPage extends StatefulWidget {
+  const SearchPage({Key? key}) : super(key: key);
 
   @override
-  State<SeasonalYoga> createState() => _SeasonalYogaState();
+  State<SearchPage> createState() => _SearchPageState();
 }
 
-class _SeasonalYogaState extends State<SeasonalYoga> {
+class _SearchPageState extends State<SearchPage> {
   List<String> assets = [
     'assets/winteryoga1.jpg',
     'assets/fallyoga1.jpg',
@@ -161,8 +162,7 @@ class _SeasonalYogaState extends State<SeasonalYoga> {
                           child: Text(
                             'Abs Workout',
                             style: TextStyle(
-                                fontSize: 15,
-                                 fontWeight: FontWeight.bold),
+                                fontSize: 15, fontWeight: FontWeight.bold),
                           ),
                           alignment: Alignment.topLeft,
                         ),
@@ -179,8 +179,7 @@ balance and steadiness,
                   ),
                 ]),
               ),
-
-             Align(
+              Align(
                 alignment: Alignment.bottomCenter,
                 child: Row(children: [
                   Expanded(
@@ -207,8 +206,7 @@ balance and steadiness,
                           child: Text(
                             'Glutes/Butts Workout',
                             style: TextStyle(
-                                fontSize: 15,
-                                 fontWeight: FontWeight.bold),
+                                fontSize: 15, fontWeight: FontWeight.bold),
                           ),
                           alignment: Alignment.topLeft,
                         ),
@@ -224,8 +222,7 @@ balance and steadiness,
                   ),
                 ]),
               ),
-
-               Align(
+              Align(
                 alignment: Alignment.bottomCenter,
                 child: Row(children: [
                   Expanded(
@@ -252,8 +249,7 @@ balance and steadiness,
                           child: Text(
                             'Legs Workout',
                             style: TextStyle(
-                                fontSize: 15,
-                                 fontWeight: FontWeight.bold),
+                                fontSize: 15, fontWeight: FontWeight.bold),
                           ),
                           alignment: Alignment.topLeft,
                         ),
@@ -269,8 +265,7 @@ Strengthens the core.'''),
                   ),
                 ]),
               ),
-
-               Align(
+              Align(
                 alignment: Alignment.bottomCenter,
                 child: Row(children: [
                   Expanded(
@@ -297,8 +292,7 @@ Strengthens the core.'''),
                           child: Text(
                             'Back Workout',
                             style: TextStyle(
-                                fontSize: 15,
-                                 fontWeight: FontWeight.bold),
+                                fontSize: 15, fontWeight: FontWeight.bold),
                           ),
                           alignment: Alignment.topLeft,
                         ),
@@ -314,8 +308,7 @@ Build Lean Muscle Mass.'''),
                   ),
                 ]),
               ),
-
-             Align(
+              Align(
                 alignment: Alignment.bottomCenter,
                 child: Row(children: [
                   Expanded(
@@ -342,8 +335,7 @@ Build Lean Muscle Mass.'''),
                           child: Text(
                             'Chest Workout',
                             style: TextStyle(
-                                fontSize: 15,
-                                 fontWeight: FontWeight.bold),
+                                fontSize: 15, fontWeight: FontWeight.bold),
                           ),
                           alignment: Alignment.topLeft,
                         ),
@@ -361,46 +353,12 @@ and joints.'''),
                   ),
                 ]),
               ),
-
             ],
           ),
         ),
       ),
-
       resizeToAvoidBottomInset: false,
-      bottomNavigationBar: BottomNavigationBar(
-          currentIndex: 1,
-          selectedItemColor: Colors.red,
-          items: const [
-            BottomNavigationBarItem(
-              label: "Home",
-              //backgroundColor: Colors.blueGrey,
-              icon: Icon(Icons.home, color: Colors.black),
-            ),
-            BottomNavigationBarItem(
-              label: "Seasonal Yoga",
-              // backgroundColor: Colors.blueGrey,
-              icon: Icon(Icons.search, color: Colors.black),
-            ),
-            BottomNavigationBarItem(
-              label: "Activity",
-              // backgroundColor: Colors.blueGrey,
-              icon: Icon(Icons.bar_chart, color: Colors.black),
-            ),
-            BottomNavigationBarItem(
-              label: "Settings",
-              // backgroundColor: Colors.blueGrey,
-              icon: Icon(Icons.settings, color: Colors.black),
-            ),
-          ],
-          onTap: (int indexOfItem) {
-             Navigator.push(
-               context,
-              MaterialPageRoute(builder: (context) => const Activity()),
-             );
-          }),
+      bottomNavigationBar: BottomBar(1),
     );
   }
 }
-
-

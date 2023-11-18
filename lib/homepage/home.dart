@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'newpage.dart';
+import 'package:yogmantra/bottomnavigation.dart';
 
-class ImageSlider extends StatefulWidget {
-  const ImageSlider({super.key});
+
+class Homepage extends StatefulWidget {
+  const Homepage({super.key});
 
   @override
-  State<ImageSlider> createState() => _ImageSliderState();
+  State<Homepage> createState() => _HomepageState();
 }
 
-class _ImageSliderState extends State<ImageSlider>
+class _HomepageState extends State<Homepage>
     with TickerProviderStateMixin {
   List<String> assets = [
     'assets/beginner2.jpg',
@@ -197,38 +198,7 @@ class _ImageSliderState extends State<ImageSlider>
         ),
       ),
       resizeToAvoidBottomInset: false,
-      bottomNavigationBar: BottomNavigationBar(
-          currentIndex: 0,
-          selectedItemColor: Colors.red,
-          items: const [
-            BottomNavigationBarItem(
-              label: "Home",
-              //backgroundColor: Colors.blueGrey,
-              icon: Icon(Icons.home, color: Colors.black),
-            ),
-            BottomNavigationBarItem(
-              label: "Seasonal Yoga",
-              // backgroundColor: Colors.blueGrey,
-              icon: Icon(Icons.search, color: Colors.black),
-            ),
-            BottomNavigationBarItem(
-              label: "Activity",
-              // backgroundColor: Colors.blueGrey,
-              icon: Icon(Icons.bar_chart, color: Colors.black),
-            ),
-            BottomNavigationBarItem(
-              label: "Settings",
-              // backgroundColor: Colors.blueGrey,
-              icon: Icon(Icons.settings, color: Colors.black),
-            ),
-          ],
-          onTap: (int indexOfItem) {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const SeasonalYoga()),
-            );
-          },
-          ),
+     bottomNavigationBar: BottomBar(0),
     );
   }
 }
