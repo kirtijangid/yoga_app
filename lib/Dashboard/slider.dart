@@ -109,7 +109,7 @@ class _ImageSliderState extends State<ImageSlider>
                           borderRadius: BorderRadius.circular(25)),
                       child: Image.asset(
                         assets[index],
-                        fit: BoxFit.cover,
+                        fit: BoxFit.cover
                       ),
                     );
                   },
