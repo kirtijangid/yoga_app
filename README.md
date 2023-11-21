@@ -2,15 +2,6 @@
 
 A new Flutter project.
 
-## Getting Started
+---------------- Application screenshots --------------
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Alt text](settings-1.jpeg) ![Alt text](BMi_cal-1.jpeg) ![Alt text](activity2-1.jpeg) ![Alt text](activity-1.jpeg) ![Alt text](bodyfitness-1.jpeg) ![Alt text](seasonalYoga-1.jpeg) ![Alt text](<homePage (2)-1.jpeg>) ![Alt text](introductory3-1.jpeg) ![Alt text](introductory2-1.jpeg) ![Alt text](introductory1-1.jpeg)
